@@ -31,7 +31,7 @@ class UserProfileList extends UserSessionList {
 		$this->sqlJoins .= " ON		(rank.rankID = user.rankID) ";
 		
 		if (WCF::getUser()->userID) {
-			$this->sqlSelects .= "		hisWhitelist.userID AS buddy, "
+			$this->sqlSelects .= "		hisWhitelist.userID AS buddy, ";
 			$this->sqlSelects .= "		hisBlacklist.userID AS ignoredUser, ";
 			$this->sqlJoins .= " LEFT JOIN	wcf".WCF_N."_user_whitelist hisWhitelist ";
 			$this->sqlJoins .= " ON		(hisWhitelist.userID = user.userID AND hisWhitelist.whiteUserID = ".WCF::getUser()->userID." AND hisWhitelist.confirmed = 1) ";
