@@ -1,7 +1,7 @@
 <?php
 // wcf imports
 require_once(WCF_DIR.'lib/data/user/UserSessionList.class.php');
-require_once(WCF_DIR.'lib/system/session/UserProfile.class.php');
+require_once(WCF_DIR.'lib/data/user/UserProfile.class.php');
 
 /**
  * 
