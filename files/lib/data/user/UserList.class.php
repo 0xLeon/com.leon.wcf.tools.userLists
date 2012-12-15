@@ -62,4 +62,11 @@ class UserList extends DatabaseObjectList {
 			$this->users[$row['userID']] = new $this->objectClassName(null, $row);
 		}
 	}
+	
+	/**
+	 * @see	DatabaseObjectList::getObjects()
+	 */
+	public function getObjects() {
+		return $this->users;
+	}
 }
