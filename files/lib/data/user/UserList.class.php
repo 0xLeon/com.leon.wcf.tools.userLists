@@ -47,8 +47,8 @@ class UserList extends DatabaseObjectList {
 	 * @see DatabaseObjectList::readObjects()
 	 */
 	public function readObjects() {
-		$sql = "SELECT		".(!empty($this->sqlSelects) ? $this->sqlSelects.',' : '')."
-					user_option.*
+		$sql = "SELECT		".(!empty($this->sqlSelects) ? $this->sqlSelects : '')."
+					user_option.*,
 					user.*
 			FROM		wcf".WCF_N."_user user
 			LEFT JOIN	wcf".WCF_N."_user_option_value user_option
