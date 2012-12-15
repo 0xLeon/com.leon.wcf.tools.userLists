@@ -14,6 +14,7 @@
 	<requiredpackages>
 		<requiredpackage minversion="1.1.*">com.woltlab.wcf</requiredpackage>
 		<requiredpackage>com.woltlab.wcf.page.user.profile</requiredpackage>
+	</requiredpackages>
 	<instructions type="install">
 		<files>files.tar</files>
 	</instructions>
